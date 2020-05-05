@@ -19,7 +19,8 @@
   },
   "homepage": "https://github.com/JKrayg/FriendFinder#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "path": "^0.12.7"
   },
   "devDependencies": {
     "nodemon": "^2.0.3"
