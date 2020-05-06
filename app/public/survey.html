@@ -241,11 +241,30 @@
     <footer class="footer">
         <div class="container">
             <p>
-                <a href="/api/survey">API Friends Link</a> |
+                <a href="/api/survey">API Friends Link | </a> 
                 <a href="https://github.com/JKrayg/FriendFinder.git">GitHub Repo</a>
             </p>
         </div>
     </footer>
+
+
+
+    <script>
+        var answerArr = [];
+
+        $(".dropdown-item").on("click", function() {
+            var value = $(this).val();
+            answerArr.push(value);
+            console.log(answerArr);
+            for (var i = 0; i < answerArr.length; i++) {
+                console.log(answerArr[i]);
+                
+            }
+            
+        })
+
+
+    </script>
 </body>
 
 </html>
