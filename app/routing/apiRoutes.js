@@ -1,14 +1,16 @@
-var friendsData = require("../data/friends");
+var friends = require("../data/friends");
 
 
-module.exports = function (app) {
+module.exports = function(app) {
 
-  app.get("/api/survey", function (req, res) {
-    res.json(friendsData);
+  app.get("/api/survey", function(req, res) {
+    res.json(friends);
   });
 
   app.post("/api/survey", function (req, res) {
-    friendsData.push(req.body);
-    res.json(true);
+    var newFriend = req.body;
+    friends.push(newFriend);
+    res.json(newFriend);
+    console.log(newFriend);
   });
 }
