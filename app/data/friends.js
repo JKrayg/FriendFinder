@@ -1,6 +1,6 @@
 var friendsArray = [
     {
-        name:"Plankton",
+        name:"Sheldon J. Plankton",
         photo:"https://vignette.wikia.nocookie.net/spongefan/images/7/78/Sheldon_J._Plankton.png/revision/latest/scale-to-width-down/220?cb=20190821163513",
         scores:[
             5,
@@ -13,6 +13,38 @@ var friendsArray = [
             5,
             4,
             1
+          ]
+      },
+      {
+        name:"Patrick Star",
+        photo:"https://i.pinimg.com/236x/79/19/d4/7919d449969b05cf5ee5195b4297e83b.jpg",
+        scores:[
+            3,
+            4,
+            1,
+            2,
+            2,
+            5,
+            3,
+            1,
+            4,
+            2
+          ]
+      },
+      {
+        name:"Karen",
+        photo:"https://vignette.wikia.nocookie.net/heroes-and-villain/images/6/6c/KarenPlankton.png/revision/latest/scale-to-width-down/334?cb=20180808002949",
+        scores:[
+            2,
+            1,
+            1,
+            3,
+            5,
+            5,
+            4,
+            2,
+            3,
+            2
           ]
       }
 ]

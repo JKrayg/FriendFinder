@@ -210,7 +210,7 @@
                 <p>- You feel more energetic after spending time with a group of people.</p>
                 <div class="dropdown">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" value="">
                         Choose an answer
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -220,6 +220,7 @@
                         <button class="dropdown-item" value="4">4</button>
                         <button class="dropdown-item" value="5">5 (Strongly Agree)</button>
                     </div>
+                    <h3 id="answerPlaceholder"></h3>
                 </div>
             </div>
         </div>
@@ -252,6 +253,7 @@
                 console.log(answerArr[i]);
             }
 
+            $("#answerPlaceholder").text("Answer: " + value)
         })
 
         $("#submit").on("click", function (event) {
@@ -272,6 +274,7 @@
             $("#form-photo").val("");
             $(".dropdownMenuButton").val("Choose an answer"); 
         });
+    
         
     </script>
 </body>
