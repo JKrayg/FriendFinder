@@ -4,10 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
     <title>Survey</title>
 </head>
 
@@ -36,17 +41,17 @@
             <div class="col-md-12">
                 <h1>Question #1</h1>
                 <p>- Your mind is always buzzing with unexplored ideas and plans.</p>
-                <div class="dropdown">
+                <div class="dropdown" id="question1">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Choose an answer
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <button class="dropdown-item" value="1">1 (Strongly Disagree)</button>
-                        <button class="dropdown-item" value="2">2</button>
-                        <button class="dropdown-item" value="3">3</button>
-                        <button class="dropdown-item" value="4">4</button>
-                        <button class="dropdown-item" value="5">5 (Strongly Agree)</button>
+                        <button class="dropdown-item" name="a1" value="1">1 (Strongly Disagree)</button>
+                        <button class="dropdown-item" name="a1" value="2">2</button>
+                        <button class="dropdown-item" name="a1" value="3">3</button>
+                        <button class="dropdown-item" name="a1" value="4">4</button>
+                        <button class="dropdown-item" name="a1" value="5">5 (Strongly Agree)</button>
                     </div>
                 </div>
             </div>
@@ -55,17 +60,17 @@
             <div class="col-md-12">
                 <h1>Question #2</h1>
                 <p>- Generally speaking, you rely more on your experience than your imagination.</p>
-                <div class="dropdown">
+                <div class="dropdown" id="question2">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Choose an answer
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <button class="dropdown-item" value="1">1 (Strongly Disagree)</button>
-                        <button class="dropdown-item" value="2">2</button>
-                        <button class="dropdown-item" value="3">3</button>
-                        <button class="dropdown-item" value="4">4</button>
-                        <button class="dropdown-item" value="5">5 (Strongly Agree)</button>
+                        <button class="dropdown-item" name="a2" value="1">1 (Strongly Disagree)</button>
+                        <button class="dropdown-item" name="a2" value="2">2</button>
+                        <button class="dropdown-item" name="a2" value="3">3</button>
+                        <button class="dropdown-item" name="a2" value="4">4</button>
+                        <button class="dropdown-item" name="a2" value="5">5 (Strongly Agree)</button>
                     </div>
                 </div>
             </div>
@@ -74,17 +79,17 @@
             <div class="col-md-12">
                 <h1>Question #3</h1>
                 <p>- You find it easy to stay relaxed and focused even when there is some pressure.</p>
-                <div class="dropdown">
+                <div class="dropdown" id="question3">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Choose an answer
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <button class="dropdown-item" value="1">1 (Strongly Disagree)</button>
-                        <button class="dropdown-item" value="2">2</button>
-                        <button class="dropdown-item" value="3">3</button>
-                        <button class="dropdown-item" value="4">4</button>
-                        <button class="dropdown-item" value="5">5 (Strongly Agree)</button>
+                        <button class="dropdown-item" name="a3" value="1">1 (Strongly Disagree)</button>
+                        <button class="dropdown-item" name="a3" value="2">2</button>
+                        <button class="dropdown-item" name="a3" value="3">3</button>
+                        <button class="dropdown-item" name="a3" value="4">4</button>
+                        <button class="dropdown-item" name="a3" value="5">5 (Strongly Agree)</button>
                     </div>
                 </div>
             </div>
@@ -93,17 +98,17 @@
             <div class="col-md-12">
                 <h1>Question #4</h1>
                 <p>- You rarely do something just out of sheer curiosity.</p>
-                <div class="dropdown">
+                <div class="dropdown" id="question4">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Choose an answer
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <button class="dropdown-item" value="1">1 (Strongly Disagree)</button>
-                        <button class="dropdown-item" value="2">2</button>
-                        <button class="dropdown-item" value="3">3</button>
-                        <button class="dropdown-item" value="4">4</button>
-                        <button class="dropdown-item" value="5">5 (Strongly Agree)</button>
+                        <button class="dropdown-item" name="a4" value="1">1 (Strongly Disagree)</button>
+                        <button class="dropdown-item" name="a4" value="2">2</button>
+                        <button class="dropdown-item" name="a4" value="3">3</button>
+                        <button class="dropdown-item" name="a4" value="4">4</button>
+                        <button class="dropdown-item" name="a4" value="5">5 (Strongly Agree)</button>
                     </div>
                 </div>
             </div>
@@ -112,115 +117,96 @@
             <div class="col-md-12">
                 <h1>Question #5</h1>
                 <p>- People can rarely upset you.</p>
-                <div class="dropdown">
+                <div class="dropdown" id="question5">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Choose an answer
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <button class="dropdown-item" value="1">1 (Strongly Disagree)</button>
-                        <button class="dropdown-item" value="2">2</button>
-                        <button class="dropdown-item" value="3">3</button>
-                        <button class="dropdown-item" value="4">4</button>
-                        <button class="dropdown-item" value="5">5 (Strongly Agree)</button>
+                        <button class="dropdown-item" name="a5" value="1">1 (Strongly Disagree)</button>
+                        <button class="dropdown-item" name="a5" value="2">2</button>
+                        <button class="dropdown-item" name="a5" value="3">3</button>
+                        <button class="dropdown-item" name="a5" value="4">4</button>
+                        <button class="dropdown-item" name="a5" value="5">5 (Strongly Agree)</button>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12">
-                <h1>Question #6</h1>
-                <p>- It is often difficult for you to relate to other people’s feelings.</p>
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Choose an answer
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <button class="dropdown-item" value="1">1 (Strongly Disagree)</button>
-                        <button class="dropdown-item" value="2">2</button>
-                        <button class="dropdown-item" value="3">3</button>
-                        <button class="dropdown-item" value="4">4</button>
-                        <button class="dropdown-item" value="5">5 (Strongly Agree)</button>
-                    </div>
+                <div id="question6">
+                    <h1>Question #6</h1>
+                    <label for="q6DropDown">- It is often difficult for you to relate to other people’s feelings.</label>
+                    <select id="q6DropDown" class="dropdown-item" style="width: 155px; background-color: gray; color: white;">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly agree)</option>
+                    </select>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12">
-                <h1>Question #7</h1>
-                <p>- In a discussion, truth should be more important than people’s sensitivities.</p>
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Choose an answer
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <button class="dropdown-item" value="1">1 (Strongly Disagree)</button>
-                        <button class="dropdown-item" value="2">2</button>
-                        <button class="dropdown-item" value="3">3</button>
-                        <button class="dropdown-item" value="4">4</button>
-                        <button class="dropdown-item" value="5">5 (Strongly Agree)</button>
-                    </div>
+                <div id="question7">
+                    <h1>Question #7</h1>
+                    <label for="q7DropDown">- In a discussion, truth should be more important than people’s sensitivities.</label>
+                    <select id="q7DropDown" class="dropdown-item" style="width: 155px; background-color: gray; color: white;">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly agree)</option>
+                    </select>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12">
-                <h1>Question #8</h1>
-                <p>- You rarely get carried away by fantasies and ideas.</p>
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Choose an answer
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <button class="dropdown-item" value="1">1 (Strongly Disagree)</button>
-                        <button class="dropdown-item" value="2">2</button>
-                        <button class="dropdown-item" value="3">3</button>
-                        <button class="dropdown-item" value="4">4</button>
-                        <button class="dropdown-item" value="5">5 (Strongly Agree)</button>
-                    </div>
+                <div id="question8">
+                    <h1>Question #8</h1>
+                    <label for="q8DropDown">- You rarely get carried away by fantasies and ideas.</label>
+                    <select id="q8DropDown" class="dropdown-item" style="width: 155px; background-color: gray; color: white;">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly agree)</option>
+                    </select>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12">
-                <h1>Question #9</h1>
-                <p>- You think that everyone’s views should be respected regardless of whether they are supported by
-                    facts or not.</p>
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Choose an answer
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <button class="dropdown-item" value="1">1 (Strongly Disagree)</button>
-                        <button class="dropdown-item" value="2">2</button>
-                        <button class="dropdown-item" value="3">3</button>
-                        <button class="dropdown-item" value="4">4</button>
-                        <button class="dropdown-item" value="5">5 (Strongly Agree)</button>
-                    </div>
+                <div id="question9">
+                    <h1>Question #9</h1>
+                    <label for="q9DropDown">- You think that everyone’s views should be respected regardless of whether
+                        they are supported by
+                        facts or not.</label>
+                    <select id="q9DropDown" class="dropdown-item" style="width: 155px; background-color: gray; color: white;">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly agree)</option>
+                    </select>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12">
-                <h1>Question #10</h1>
-                <p>- You feel more energetic after spending time with a group of people.</p>
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" value="">
-                        Choose an answer
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <button class="dropdown-item" value="1">1 (Strongly Disagree)</button>
-                        <button class="dropdown-item" value="2">2</button>
-                        <button class="dropdown-item" value="3">3</button>
-                        <button class="dropdown-item" value="4">4</button>
-                        <button class="dropdown-item" value="5">5 (Strongly Agree)</button>
-                    </div>
-                    <h3 id="answerPlaceholder"></h3>
+                <div id="question10">
+                    <h1>Question #10</h1>
+                    <label for="q10DropDown">- You feel more energetic after spending time with a group of
+                        people.</label>
+                    <select id="q10DropDown" class="dropdown-item" style="width: 155px; background-color: gray; color: white;">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly agree)</option>
+                    </select>
                 </div>
             </div>
         </div>
@@ -243,18 +229,14 @@
 
     </script>
     <script>
-        var answerArr = [];
+        const answers = {};
 
-        $(".dropdown-item").on("click", function () {
+        $(".dropdown-item").on("change", function () {
             var value = $(this).val();
-            answerArr.push(value);
-            console.log(answerArr);
-            for (var i = 0; i < answerArr.length; i++) {
-                console.log(answerArr[i]);
-            }
-
-            $("#answerPlaceholder").text("Answer: " + value)
-        })
+            var question = $(this)[0].id;
+            answers[question] = value;
+            console.log(answers)
+        });
 
         $("#submit").on("click", function (event) {
             event.preventDefault();
@@ -266,16 +248,14 @@
             }
             console.log(newFriend)
             $.post("/api/survey", newFriend,
-            function(data) {
-                console.log("survey.html", data);
-            });
+                function (data) {
+                    console.log("survey.html", data);
+                });
 
             $("#form-name").val("");
             $("#form-photo").val("");
-            $(".dropdownMenuButton").val("Choose an answer"); 
+            $(".dropdownMenuButton").val("Choose an answer");
         });
-    
-        
     </script>
 </body>
 
