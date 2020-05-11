@@ -2,9 +2,9 @@
 var friends = require("../data/friends");
 
 
-module.exports = function(app) {
+module.exports = function (app) {
 
-  app.get("/api/survey", function(req, res) {
+  app.get("/api/survey", function (req, res) {
     res.json(friends);
   });
 
@@ -16,11 +16,18 @@ module.exports = function(app) {
     var friendPhoto = "";
     var totalDifference = 100;
 
-    for (var i = 0; i < friends.length; i ++) {
+    for (var i = 0; i < friends.length; i++) {
       var difference = 0
       for (var p = 0; p < newFriendScores.length; p++) {
         difference += Math.abs(friends[i].scores[p] - newFriendScores[p]);
       }
     }
+    if (difference < totalDifference) {
+      totalDifference = difference;
+      friendName = friends[i].name;
+      friendPhoto = friends[i].photo;
+    }
+    friends.push(newFriend);
+
   });
 }
