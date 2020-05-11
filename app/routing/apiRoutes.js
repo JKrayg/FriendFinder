@@ -18,8 +18,8 @@ module.exports = function(app) {
 
     for (var i = 0; i < friends.length; i ++) {
       var difference = 0
-      for (var i = 0; i < newFriendScores.length; i++) {
-        difference += Math.abs(friends[i].scores[i] - newFriendScores[i]);
+      for (var p = 0; p < newFriendScores.length; p++) {
+        difference += Math.abs(friends[i].scores[p] - newFriendScores[p]);
       }
     }
   });
