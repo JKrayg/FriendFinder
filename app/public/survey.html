@@ -17,6 +17,7 @@
 </head>
 
 <body>
+    <img src="https://i.pinimg.com/originals/d5/b6/80/d5b680e9a98255012e9e06851345019b.gif" style="position: absolute; top: 0; right: 0; width: 75px; height: 75px;">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -209,7 +210,7 @@
             </div>
 
         </div>
-        <div class="row">
+        <div class="row" id="closestMatch">
             <div class="col-md-6">
                 <img id="friendMatchPhoto" style="height: 300px; width: 250px;"></img>
             </div>
@@ -229,6 +230,7 @@
     </footer>
 
     <script>
+        $("#closestMatch").hide();
         var answers = {};
 
         $(".dropdown-item").on("change", function () {
@@ -249,25 +251,32 @@
             }
             console.log(newFriend)
             $.post("/api/survey", newFriend)
+                .done(function (data) {
+
+                    $('#friendMatch').html(data.friendName);
+                    $("#friendMatchPhoto").attr("src", data.friendPhoto);
+
+                    $("#form-name").val("");
+                    $("#form-photo").val("");
+                    $(".dropdownMenuButton").val("Choose an answer");
+                    $("#closestMatch").show();
 
 
+                    // $.get("/api/survey",
+                    // function(data) {
+                    //     for (var i = 0; i < data.length; i++) {
+                    //         var Arrs = data[i].scores;
+                    //         console.log(answersArr)
+                    //         //console.log(Arrs);
+                    //         // if (answersArr === Arrs) {
+                    //         //     console.log(Arrs);
+                    //         // } else {
+                    //         //     console.log("no")
+                    //         // }
+                    //     }
 
-            // $.get("/api/survey",
-            // function(data) {
-            //     for (var i = 0; i < data.length; i++) {
-            //         var Arrs = data[i].scores;
-            //         console.log(answersArr)
-            //         //console.log(Arrs);
-            //         // if (answersArr === Arrs) {
-            //         //     console.log(Arrs);
-            //         // } else {
-            //         //     console.log("no")
-            //         // }
-            //     }
-        });
-        $("#form-name").val("");
-        $("#form-photo").val("");
-        $(".dropdownMenuButton").val("Choose an answer");
+                    // })
+                });
 
         });
     </script>
