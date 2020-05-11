@@ -16,6 +16,11 @@ module.exports = function(app) {
     var friendPhoto = "";
     var totalDifference = 100;
 
-
+    for (var i = 0; i < friends.length; i ++) {
+      var difference = 0
+      for (var i = 0; i < newFriendScores.length; i++) {
+        difference += Math.abs(friends[i].scores[i] - newFriendScores[i]);
+      }
+    }
   });
 }
