@@ -1,3 +1,4 @@
+//var path = require("path")
 var friends = require("../data/friends");
 
 
@@ -9,8 +10,12 @@ module.exports = function(app) {
 
   app.post("/api/survey", function (req, res) {
     var newFriend = req.body;
-    friends.push(newFriend);
-    res.json(newFriend);
-    console.log(newFriend);
+    var newFriendScores = newFriend.scores;
+
+    var friendName = "";
+    var friendPhoto = "";
+    var totalDifference = 100;
+
+
   });
 }
