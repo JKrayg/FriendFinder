@@ -17,7 +17,8 @@
 </head>
 
 <body>
-    <img src="https://i.pinimg.com/originals/d5/b6/80/d5b680e9a98255012e9e06851345019b.gif" style="position: absolute; top: 0; right: 0; width: 50px; height: 50px;">
+    <img src="https://i.pinimg.com/originals/d5/b6/80/d5b680e9a98255012e9e06851345019b.gif"
+        style="position: absolute; top: 0; right: 0; width: 50px; height: 50px;">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -44,7 +45,7 @@
                     <h2>Question #1</h2>
                     <label for="q1dropDown">- Your mind is always buzzing with unexplored ideas and plans.</label>
                     <select id="q1dropDown" class="dropdown-item"
-                        style="width: 155px; background-color: gray; color: white;">
+                        style="width: 160px; background-color: gray; color: white;">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -61,7 +62,7 @@
                     <label for="q2dropDown">- Generally speaking, you rely more on your experience than your
                         imagination.</label>
                     <select id="q2dropDown" class="dropdown-item"
-                        style="width: 155px; background-color: gray; color: white;">
+                        style="width: 160px; background-color: gray; color: white;">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -78,7 +79,7 @@
                     <label for="q3dropDown">- You find it easy to stay relaxed and focused even when there is some
                         pressure.</label>
                     <select id="q3dropDown" class="dropdown-item"
-                        style="width: 155px; background-color: gray; color: white;">
+                        style="width: 160px; background-color: gray; color: white;">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -94,7 +95,7 @@
                     <h2>Question #4</h2>
                     <label for="q4dropDown">- You rarely do something just out of sheer curiosity.</label>
                     <select id="q4dropDown" class="dropdown-item"
-                        style="width: 155px; background-color: gray; color: white;">
+                        style="width: 160px; background-color: gray; color: white;">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -110,7 +111,7 @@
                     <h2>Question #5</h2>
                     <label for="q5dropDown">- People can rarely upset you.</label>
                     <select id="q5dropDown" class="dropdown-item"
-                        style="width: 155px; background-color: gray; color: white;">
+                        style="width: 160px; background-color: gray; color: white;">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -127,7 +128,7 @@
                     <label for="q6dropDown">- It is often difficult for you to relate to other people’s
                         feelings.</label>
                     <select id="q6dropDown" class="dropdown-item"
-                        style="width: 155px; background-color: gray; color: white;">
+                        style="width: 160px; background-color: gray; color: white;">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -144,7 +145,7 @@
                     <label for="q7dropDown">- In a discussion, truth should be more important than people’s
                         sensitivities.</label>
                     <select id="q7dropDown" class="dropdown-item"
-                        style="width: 155px; background-color: gray; color: white;">
+                        style="width: 160px; background-color: gray; color: white;">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -160,7 +161,7 @@
                     <h2>Question #8</h2>
                     <label for="q8dropDown">- You rarely get carried away by fantasies and ideas.</label>
                     <select id="q8dropDown" class="dropdown-item"
-                        style="width: 155px; background-color: gray; color: white;">
+                        style="width: 160px; background-color: gray; color: white;">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -177,7 +178,7 @@
                     <label for="q9dropDown">- You think that everyone’s views should be respected regardless of
                         whethethey are supported by facts or not.</label>
                     <select id="q9dropDown" class="dropdown-item"
-                        style="width: 155px; background-color: gray; color: white;">
+                        style="width: 160px; background-color: gray; color: white;">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -194,7 +195,7 @@
                     <label for="q10dropDown">- You feel more energetic after spending time with a group of
                         people.</label>
                     <select id="q10dropDown" class="dropdown-item"
-                        style="width: 155px; background-color: gray; color: white;">
+                        style="width: 160px; background-color: gray; color: white;">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -210,13 +211,13 @@
             </div>
 
         </div>
-        <div class="row" id="closestMatch">
+        <!-- <div class="row" id="closestMatch">
             <div class="col-md-6">
                 <h1>Your Match</h1>
                 <img id="friendMatchPhoto" style="height: 300px; width: 250px;"></img>
                 <h2 id="friendMatch"></h2>
             </div>
-        </div>
+        </div> -->
     </div>
 
     <footer class="footer">
@@ -227,6 +228,24 @@
             </p>
         </div>
     </footer>
+    <div class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Your Match:</h2>
+                    <h2 id="friendMatch"></h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img id="friendMatchPhoto" style="height: 300px; width: 250px;"></img>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script>
         $("#closestMatch").hide();
@@ -238,6 +257,7 @@
             answers[question] = parseInt(value);
             //console.log(answers)
             console.log(Object.values(answers));
+            
         });
 
         $("#submit").on("click", function (event) {
@@ -257,8 +277,10 @@
 
                     $("#form-name").val("");
                     $("#form-photo").val("");
-                    $(".dropdown-item").val("Choose");
+                    $(".dropdown-item").val("Choose an Answer")
+                    $(".dropdown-item").text("Choose an Answer")
                     $("#closestMatch").show();
+                    $(".modal").show();
 
 
                     // $.get("/api/survey",
@@ -277,7 +299,13 @@
                     // })
                 });
 
+
         });
+
+        $(".close").on("click", function () {
+            $(".modal").hide();
+            location.reload();
+        })
     </script>
 </body>
 
